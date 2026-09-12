@@ -2,6 +2,8 @@ import HeroReveal from './HeroReveal';
 import './HeroReveal.css';
 import IntroLoader from './IntroLoader';
 import './IntroLoader.css';
+import VariableFontText from './VariableFontText';
+import './VariableFontText.css';
 import React, { useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import gsap from 'gsap';
@@ -43,6 +45,12 @@ function App() {
 			<main className="site-main">
 				{showIntro && <IntroLoader onComplete={() => setShowIntro(false)} />}
 				<HeroReveal />
+				<div className="py-20">
+					<VariableFontText
+						text="Move your mouse close to the letters"
+						animate={true}
+					/>
+				</div>
 				<div className="hero">Hero Section</div>
 				<div className="roles">Roles Section</div>
 				<div className="works">Works Section</div>

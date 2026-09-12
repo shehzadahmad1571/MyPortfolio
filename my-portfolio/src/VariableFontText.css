@@ -1,0 +1,17 @@
+.vft-container {
+	display: inline-block;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.vft-letter {
+	display: inline-block;
+	transition: font-variation-settings 0.25s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.vft-letter {
+		transition: none;
+	}
+}
