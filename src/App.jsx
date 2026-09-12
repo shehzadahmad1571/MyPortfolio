@@ -2,6 +2,8 @@ import HeroReveal from './HeroReveal';
 import './HeroReveal.css';
 import IntroLoader from './IntroLoader';
 import './IntroLoader.css';
+import FeaturedWorks from './FeaturedWorks';
+import './FeaturedWorks.css';
 import Roles from './Roles';
 import './Roles.css';
 import VariableFontText from './VariableFontText';
@@ -47,18 +49,26 @@ function App() {
 			<main className="site-main">
 				{showIntro && <IntroLoader onComplete={() => setShowIntro(false)} />}
 				<HeroReveal />
+				<section className="hero" aria-labelledby="intro-title">
+					<h1 id="intro-title">Shehzad Ahmad</h1>
+					<p>CS student @UOL | Driven to learn, Determined to deliver.</p>
+				</section>
 				<div className="py-20">
 					<VariableFontText
-						text="Move your mouse close to the letters"
+						text="Shehzad Ahmad"
 						animate={true}
 					/>
 				</div>
-				<div className="hero">Hero Section</div>
 				<Roles />
-				<div className="works">Works Section</div>
-				<div className="contact">Contact Section</div>
+				<FeaturedWorks />
+				<section className="contact" aria-labelledby="contact-title">
+					<h2 id="contact-title">Let&apos;s work together</h2>
+					<a href="mailto:shehzadahmad11012l@gmail.com">
+						shehzadahmad11012l@gmail.com
+					</a>
+				</section>
 			</main>
-			<footer className="site-footer">Footer</footer>
+			<footer className="site-footer">Shehzad Ahmad</footer>
 		</>
 	);
 }

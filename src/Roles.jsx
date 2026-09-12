@@ -3,7 +3,8 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 const roles = [
 	'Full Stack Developer',
 	'UI Engineer',
-	'Open Source Contributor',
+	'Graphic Designer',
+	'Video Editor',
 ];
 
 function Roles() {
