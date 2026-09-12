@@ -2,6 +2,8 @@ import HeroReveal from './HeroReveal';
 import './HeroReveal.css';
 import IntroLoader from './IntroLoader';
 import './IntroLoader.css';
+import Footer from './Footer';
+import './Footer.css';
 import FeaturedWorks from './FeaturedWorks';
 import './FeaturedWorks.css';
 import Roles from './Roles';
@@ -68,7 +70,7 @@ function App() {
 					</a>
 				</section>
 			</main>
-			<footer className="site-footer">Shehzad Ahmad</footer>
+			<Footer />
 		</>
 	);
 }
