@@ -1,0 +1,50 @@
+.hero-reveal {
+	position: relative;
+	width: 100%;
+	min-height: 60vh;
+	overflow: hidden;
+}
+
+.reveal-bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.reveal-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-mask-image: radial-gradient(
+		circle 180px at var(--mx) var(--my),
+		transparent 98%,
+		black 100%
+	);
+	mask-image: radial-gradient(
+		circle 180px at var(--mx) var(--my),
+		transparent 98%,
+		black 100%
+	);
+	filter: url(#amoebaDistort);
+	background-color: var(--accent);
+}
+
+.reveal-top img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal-top {
+		mask-image: none;
+		-webkit-mask-image: none;
+	}
+}

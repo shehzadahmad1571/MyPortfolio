@@ -1,3 +1,5 @@
+import HeroReveal from './HeroReveal';
+import './HeroReveal.css';
 import IntroLoader from './IntroLoader';
 import './IntroLoader.css';
 import React, { useEffect, useState } from 'react';
@@ -40,6 +42,7 @@ function App() {
 		<>
 			<main className="site-main">
 				{showIntro && <IntroLoader onComplete={() => setShowIntro(false)} />}
+				<HeroReveal />
 				<div className="hero">Hero Section</div>
 				<div className="roles">Roles Section</div>
 				<div className="works">Works Section</div>
