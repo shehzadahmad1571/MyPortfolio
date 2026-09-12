@@ -2,6 +2,8 @@ import HeroReveal from './HeroReveal';
 import './HeroReveal.css';
 import IntroLoader from './IntroLoader';
 import './IntroLoader.css';
+import Roles from './Roles';
+import './Roles.css';
 import VariableFontText from './VariableFontText';
 import './VariableFontText.css';
 import React, { useEffect, useState } from 'react';
@@ -52,7 +54,7 @@ function App() {
 					/>
 				</div>
 				<div className="hero">Hero Section</div>
-				<div className="roles">Roles Section</div>
+				<Roles />
 				<div className="works">Works Section</div>
 				<div className="contact">Contact Section</div>
 			</main>
